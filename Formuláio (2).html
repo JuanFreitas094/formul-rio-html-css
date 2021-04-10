@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formuláio.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Participantes (Alunos)</h1>
+        <p id="subtitulo">Preencha o formulário abaixo, entraremos em contato</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <select id="sexo" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="data"><strong>Data de Nascimento:</strong></label>
+                <input type="date" name="date" id="date" required >
+            </div>
+
+            <div class="campo">
+                <label for="certidao"><strong>Certidão de Nascimento:</strong></label>
+                <input type="number" name="certidao" type="text" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Portador de alguma limitação física/mental:</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="sim">Sim
+                    <input type="text" name="descreva" id="descreva">
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="nao">Não
+                </label>
+                <br>
+                <label><strong>Renda familiar:</strong></label>
+                <select id="renda" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Abaixo de um salário</option>
+                    <option>Um a dois salários</option>
+                    <option>Dois a quatro salários</option>
+                    <option>Quatro a cinco salários</option>
+                    <option>Mais de cinco salários</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Nome do responsável:</strong></label>
+                <input type="text" name="nome" id="nome">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <select id="sexo" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+                <br>
+                <label><strong>Selecione o grau de parentesco:</strong></label>
+                <label for="grau"></label>
+                <select id="grau" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Pai</option>
+                    <option>Mãe</option>
+                    <option>Irmã(o)</option>
+                    <option>Avô(ó)</option>
+                    <option>Outros</option>
+                </select>
+                <label>Em caso de outros, descreva:</label>
+                <input type="text" name="escreva" id="escreva">
+                <br>
+                <label><strong>CPF do responsável:</strong></label>
+                <input type="number" name="cpf" id="cpf" required>
+                <label>Telefone:</label>
+                <input type="number" name="telefone" id="telefone">
+                <label><strong>Data de nascimento:</strong></label>
+                <input type="date" name="date" id="date" required>
+                <br>
+                <label><strong>Endereço</strong></label>
+                <input type="text number" name="endereço" id="endereço" required>
+                <label><strong>Email</strong></label>
+                <input type="email" name="email" id="email"required>
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit">Concluir</button>
+
+    </form>
+</body>
+</html>
